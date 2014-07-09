@@ -1,0 +1,62 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: "Open Sans", Arimo, Arial, sans-serif;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+#header, #content, #nav, #footer {
+  padding: 1em;
+}
+
+#header {
+}
+
+#content-wrapper {
+  display: flex;
+  flex: 1 1 0;
+}
+
+#nav {
+  overflow-y: auto;
+}
+
+#content {
+  flex: 1 1 0;
+  overflow-y: auto;
+}
+
+#footer {
+}
+
+
+/* Lists */
+ul {
+  list-style-type: none;
+  margin-left: 0;
+  padding: 0;
+}
+
+ul ul {
+  margin-left: .9em;
+}
+
+ul > li:before {
+  content: '•';
+  margin-right: .5em;
+  position: relative;
+  top: .1em;
+}
+
+ul > li ul > li:before {
+  content: '◦';
+  top: 0;
+}
+
+ul > li ul > li ul > li:before {
+  content: '𝅉';
+  top: -.2em;
+}
